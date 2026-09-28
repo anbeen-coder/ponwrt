@@ -87,9 +87,6 @@ jobs:
             configs/release.config > .config
           make defconfig
 
-          export TERM=xterm
-          make menuconfig
-
       - name: Download sources
         run: make download -j"$(nproc)"
 
