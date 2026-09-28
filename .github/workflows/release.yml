@@ -87,8 +87,6 @@ jobs:
             configs/release.config > .config
           make defconfig
 
-          make menuconfig
-
       - name: Download sources
         run: make download -j"$(nproc)"
 
