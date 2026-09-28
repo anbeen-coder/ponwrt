@@ -87,6 +87,10 @@ jobs:
             configs/release.config > .config
           make defconfig
 
+          export TERM=xterm
+          export TERMINFO=/usr/share/terminfo
+          make menuconfig
+
       - name: Download sources
         run: make download -j"$(nproc)"
 
