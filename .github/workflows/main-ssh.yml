@@ -1,8 +1,8 @@
-name: Debug with tmate
+name: Debug with Debugger Action
 on: [push]
 jobs:
  debug:
    runs-on: ubuntu-latest
    steps:
-     - name: Setup tmate session
-       uses: mxschmitt/action-tmate@v3
+     - name: Setup Debug Session
+       uses: csexton/debugger-action@master
